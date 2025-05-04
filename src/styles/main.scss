@@ -1,0 +1,41 @@
+@use 'header';
+@use 'hero';
+@use 'personagens';
+@use 'variables';
+@use 'reset';
+@use 'transformacoes';
+@use 'curiosidades';
+@use 'footer';
+
+    /* Menu Hamburguer para dispositivos móveis */
+    .header__hamburguer {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    .header__line {
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    }
+
+    /* Para telas menores */
+    @media (max-width: 768px) {
+    .header__nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .header__nav-list.active {
+        display: flex;
+    }
+
+    .header__hamburguer {
+        display: flex;
+    }
+    }

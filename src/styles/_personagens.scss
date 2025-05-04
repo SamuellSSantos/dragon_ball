@@ -1,0 +1,45 @@
+    @use 'variables';
+
+    .characters {
+        padding: 60px 20px;
+        background-color: variables.$bg-dark;
+        color: variables.$white;
+        
+        &__title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        
+        &__card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        &__card {
+            background-color: variables.$bg-light;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        
+            &:hover {
+            transform: translateY(-5px);
+            }
+        
+            .card__image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            }
+        
+            .card__name {
+            font-size: 1.2rem;
+            color: variables.$text-dark;
+            }
+        }
+        }

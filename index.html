@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Dragon Ball</title>
+    <link rel="stylesheet" href="./dist/css/main.css" />
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <img src="./dist/images/dragon_ball_logo1.PNG" alt="Dragon Ball" class="header__logo" />
+            <nav class="header__nav">
+                <div class="header__hamburguer" id="hamburguer-icon">
+                    <span class="header__line"></span>
+                    <span class="header__line"></span>
+                    <span class="header__line"></span>
+                </div>
+                <ul class="header__nav-list" id="nav-list">
+                    <li class="header__nav-item"><a href="#inicio" class="header__nav-link">Início</a></li>
+                    <li class="header__nav-item"><a href="#personagens" class="header__nav-link">Personagens</a></li>
+                    <li class="header__nav-item"><a href="#transformacoes" class="header__nav-link">Transformações</a></li>
+                    <li class="header__nav-item"><a href="#curiosidades" class="header__nav-link">Curiosidades</a></li>
+                    <li class="header__nav-item"><a href="#contato" class="header__nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
+
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">Bem-vindo ao Mundo de Dragon Ball</h1>
+                <p class="hero__description">Junte-se a Goku e seus amigos em uma jornada épica!</p>
+                <a href="#personagens" class="hero__button btn btn--primary">Conheça os Personagens</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="characters" id="personagens">
+        <div class="characters__container container">
+            <h2 class="characters__title">Personagens</h2>
+            <div class="characters__card-container">
+                <div class="characters__card card">
+                    <img src="./dist/images/goku.jpg" alt="Goku" class="card__image">
+                    <h3 class="card__name">Goku</h3>
+                </div>
+                <div class="characters__card card">
+                    <img src="./dist/images/vegetto.webp" alt="Vegeta" class="card__image">
+                    <h3 class="card__name">Vegeta</h3>
+                </div>
+                <div class="characters__card card">
+                    <img src="./dist/images/card_gohan.jpeg" alt="Gohan" class="card__image">
+                    <h3 class="card__name">Gohan</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="transformacoes" id="transformacoes">
+        <div class="transformacoes__container">
+        <h2 class="transformacoes__title">Transformações do Goku</h2>
+        <div class="transformacoes__cards">
+            <div class="transformacoes__card">
+            <img src="./dist/images/saiyajin.png" alt="Super Saiyajin" class="transformacoes__image" />
+            <h3 class="transformacoes__name">Super Saiyajin</h3>
+            <p class="transformacoes__description">Primeira grande transformação, aumenta drasticamente o poder de luta.</p>
+            </div>
+            <div class="transformacoes__card">
+            <img src="./dist/images/Saiyajin_Blue.jpg" alt="Super Saiyajin Blue" class="transformacoes__image" />
+            <h3 class="transformacoes__name">Super Saiyajin Blue</h3>
+            <p class="transformacoes__description">Combinação do poder de Super Saiyajin com o ki divino.</p>
+            </div>
+            <div class="transformacoes__card">
+            <img src="./dist/images/Ultra_Instinct.jpg" alt="Ultra Instinct" class="transformacoes__image" />
+            <h3 class="transformacoes__name">Ultra Instinct</h3>
+            <p class="transformacoes__description">Estado mental avançado onde o corpo reage sozinho ao perigo.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="curiosidades" class="curiosidades">
+        <div class="curiosidades__container">
+            <h2 class="curiosidades__title">Curiosidades do Universo Dragon Ball</h2>
+            <ul class="curiosidades__lista">
+            <li class="curiosidades__item">
+                O nome "Kakarotto" vem de "carrot" (cenoura), seguindo o padrão vegetal dos Saiyajins.
+            </li>
+            <li class="curiosidades__item">
+                Goku só matou dois inimigos diretamente em toda a série: Yakon e Kid Boo.
+            </li>
+            <li class="curiosidades__item">
+                O Toriyama esqueceu do personagem Launch, por isso ela "sumiu" de *Dragon Ball Z*.
+            </li>
+            <li class="curiosidades__item">
+                O poder de luta de Goku na infância era apenas 10 — ele chega a mais de 1 trilhão em *Dragon Ball Super*.
+            </li>
+            </ul>
+        </div>
+    </section>
+
+        
+        
+    <footer class="site-footer">
+        <div class="site-footer__container">
+            <div class="site-footer__branding">
+            <img src="/dist/images/dragon_ball_logo1.PNG" alt="Logo Dragon Ball" class="site-footer__logo" />
+            <p class="site-footer__text">Site fã não-oficial de Dragon Ball.</p>
+            </div>
+        
+            <nav class="site-footer__nav">
+            <ul class="site-footer__list">
+                <li><a href="#personagens" class="site-footer__link">Personagens</a></li>
+                <li><a href="#transformacoes" class="site-footer__link">Transformações</a></li>
+                <li><a href="#curiosidades" class="site-footer__link">Curiosidades</a></li>
+                <li><a href="#contato" class="site-footer__link">Contato</a></li>
+            </ul>
+            </nav>
+        </div>
+        
+        <div class="site-footer__bottom">
+            <p>&copy; 2025 Dragon Ball Fã Site. Todos os direitos reservados.</p>
+        </div>
+        </footer>
+
+        <script src="./src/js/main.js"></script>
 </body>
 </html>

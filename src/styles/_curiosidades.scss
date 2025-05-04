@@ -1,0 +1,24 @@
+    .curiosidades {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    color: #f0f0f0;
+
+    &__title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__lista {
+        list-style: disc;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-left: 1.5rem;
+
+        &__item {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        }
+    }
+    }

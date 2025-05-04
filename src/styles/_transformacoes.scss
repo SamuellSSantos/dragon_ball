@@ -1,0 +1,55 @@
+@use 'variables';
+
+    .transformacoes {
+    background-color: variables.$bg-dark;
+    padding: 60px 20px;
+    color: variables.$white;
+
+    &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    &__title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    }
+
+    &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    }
+
+    &__card {
+    background-color: variables.$bg-light;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-8px);
+    }
+    }
+
+    &__image {
+    width: 220px ;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    }
+
+    &__name {
+    font-size: 1.3rem;
+    color: variables.$text-dark;
+    margin-bottom: 10px;
+    }
+
+    &__description {
+    font-size: 1rem;
+    }
+    }
